@@ -15,7 +15,7 @@ public class Task11Main {
 
     FileRead fileRead = new FileRead();
 
-    List<String> getLines = new ArrayList<>();
+    List<String> getLines;
 
     try {
       getLines = fileRead.getLine(inputDataFile);
@@ -48,15 +48,9 @@ public class Task11Main {
     String authorName = "";
 
     switch (kind) {
-      case 1 -> {
-        num = search.searchNumber(scanner);
-      }
-      case 2 -> {
-        bookTitle = search.searchTitle(scanner);
-      }
-      case 3 -> {
-        authorName = search.searchAuthor(scanner);
-      }
+      case 1 -> num = search.searchNumber(scanner);
+      case 2 -> bookTitle = search.searchTitle(scanner);
+      case 3 -> authorName = search.searchAuthor(scanner);
       default -> System.err.println("1,2,3いずれかの数字を入力してください");
 
     }
