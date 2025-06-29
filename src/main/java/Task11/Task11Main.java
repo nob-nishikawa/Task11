@@ -63,7 +63,6 @@ public class Task11Main {
 
     int i = 0;
     for (Book book : Liblary) {
-//      System.out.println(Liblary.get(i).getAuther());
       if (num == Liblary.get(i).getReferenceNumber() || (bookTitle.equals(
           Liblary.get(i).getBookName())) || authorName.equals(Liblary.get(i).getAuther())) {
         System.out.println(
@@ -75,7 +74,6 @@ public class Task11Main {
 
       i++;
     }
-//    System.out.println(Liblary.get(0).getReferenceNumber());
     scanner.close();
 
   }
