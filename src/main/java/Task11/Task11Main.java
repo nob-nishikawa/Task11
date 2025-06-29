@@ -56,7 +56,7 @@ public class Task11Main {
     }
 
     int i = 0;
-    for (Book book : Liblary) {
+    for (Book ignored : Liblary) {
       if (num == Liblary.get(i).getReferenceNumber() || (bookTitle.equals(
           Liblary.get(i).getBookName())) || authorName.equals(Liblary.get(i).getAuther())) {
         System.out.println(
